@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Contatore</string>
+    <string name="Diminuisci">--</string>
+    <string name="Aumenta">++</string>
+    <string name="Messaggio">Hai cliccato 0 volte</string>
+    <string name="Inizio">Premi i pulsati per iniziare</string>
 </resources>
