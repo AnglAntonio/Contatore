@@ -3,7 +3,7 @@
     <string name="Diminuisci">--</string>
     <string name="Aumenta">++</string>
     <string name="Messaggio">Hai cliccato 0 volte</string>
-    <string name="Inizio">Premi i pulsati per iniziare</string>
+    <string name="Inizio">Il contatore vale 100</string>
     <string name="Valore">Il contatore vale </string>
     <string name="Azzeramento">Azzera</string>
     <string name="Raddoppia">x2</string>
