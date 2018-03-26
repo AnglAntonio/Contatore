@@ -5,4 +5,6 @@
     <string name="Messaggio">Hai cliccato 0 volte</string>
     <string name="Inizio">Premi i pulsati per iniziare</string>
     <string name="Valore">Il contatore vale </string>
+    <string name="Azzeramento">Azzera</string>
+    <string name="Raddoppia">Raddoppia</string>
 </resources>

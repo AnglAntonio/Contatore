@@ -13,7 +13,7 @@ public class Contatore extends AppCompatActivity {
     private TextView Messaggio;
     private Button Aumenta;
     private Button Diminuisci;
-
+    private Button Azzera;
 
     //Dichiaro contatore
     private int contatore = 0;
