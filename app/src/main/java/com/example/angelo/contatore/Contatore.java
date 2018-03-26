@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class Contatore extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class Contatore extends AppCompatActivity {
     private Button Aumenta;
     private Button Diminuisci;
     private Button Azzera;
+    private CheckBox Raddoppia;
 
     //Dichiaro contatore
     private int contatore = 0;
@@ -27,13 +29,16 @@ public class Contatore extends AppCompatActivity {
         Messaggio = findViewById(R.id.textMessaggio);
         Aumenta = findViewById(R.id.buttonAumenta);
         Diminuisci = findViewById(R.id.buttonDiminuisci);
-
+        Azzera = findViewById(R.id.buttonAzzeramento);
+        Raddoppia = findViewById(R.id.checkRaddoppia);
 
         //imposto azioni pulsanti
         Aumenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ++contatore;
+                if (Raddoppia.isChecked())
+                    ++contatore;
                 visualizzaMessaggio();
             }
         });
@@ -42,9 +47,21 @@ public class Contatore extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 --contatore;
+                if (Raddoppia.isChecked())  //Se raddoppia sta spuntato allora fai l'if.
+                    --contatore;
                 visualizzaMessaggio();
             }
         });
+
+        Azzera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                contatore = 0;
+            }
+        });
+
+
+
     }
 
 
