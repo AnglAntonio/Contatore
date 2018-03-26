@@ -16,7 +16,7 @@ public class Contatore extends AppCompatActivity {
 
 
     //Dichiaro contatore
-    private int contatore = 0;
+    private int contatore = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,7 @@ public class Contatore extends AppCompatActivity {
      * Metodo che visualizza messaggio
      */
     private void visualizzaMessaggio (){
-        Messaggio.setText(getString(R.string.Valore) + contatore);   //Con R accedo alle risorse, .string accedo al file delle string
+        Messaggio.setText(getString(R.string.Valore) + " " + contatore);   //Con R accedo alle risorse, .string accedo al file delle string
     }
 
 
